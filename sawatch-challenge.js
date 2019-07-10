@@ -9,7 +9,7 @@ getData = () => {
 // Take array of vehicle objects and sorts them by model, then appends a new row for each vehicle to the table
 sortVehicles = (vehicles) => {
   const sortedVehicles = vehicles.sort(compareModels)
-  sortedVehicles.forEach((vehicle) => appendVehicleRowToTable(vehicle))
+  sortedVehicles.forEach(vehicle => appendVehicleRowToTable(vehicle))
 }
 
 // Compares vehicles by their model to be sorted appropriately
